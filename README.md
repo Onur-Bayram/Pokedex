@@ -1,4 +1,4 @@
-#<--Pokédex-->
+#<--Pokédex-->#
 
 Kleine Pokédex-Web-App in JavaScript.  
 Du kannst Pokémon durchsuchen, Karten anklicken und Details wie Stats, Typen und Fähigkeiten ansehen.
