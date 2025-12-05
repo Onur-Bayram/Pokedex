@@ -1,0 +1,21 @@
+:root {
+  --bg: #061a2e;
+  --card: rgba(255, 255, 255, 0.12);
+  --text: #ffffff;
+
+  --fire: #ff944d;
+  --water: #4d9bff;
+  --grass: #78c850;
+  --electric: #ffd54d;
+  --psychic: #ff80ab;
+  --rock: #b8a038;
+  --ground: #e0c068;
+  --bug: #a8b820;
+  --poison: #a040a0;
+  --ghost: #705898;
+  --ice: #98d8d8;
+  --dragon: #7038f8;
+  --dark: #705848;
+  --steel: #b8b8d0;
+  --fairy: #f4b5f4;
+}

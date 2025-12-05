@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pokédex</title>
+
+ 
+  <link rel="stylesheet" href="./styles/assets.css"/>
+  <link rel="stylesheet" href="./styles/fonts.css"/>
+  <link rel="stylesheet" href="./styles/standard.css"/>
+  <link rel="stylesheet" href="./styles/basket.css"/>
+
+
+
+  <link rel="icon" type="image/png" href="./assets/pokedex.png" />
+</head>
+
+<body onload="init()">
+  <header>
+    <div class="header-left">
+      <img src="./assets/pokedex.png" alt="Pokedex logo" class="logo" />
+      <h1>Pokédex</h1>
+    </div>
+
+    <div class="header-right">
+      <input
+        id="searchInput"
+        placeholder="Suche Pokémon..."
+        oninput="handleSearchInput()"
+      />
+      <button id="searchBtn" onclick="filterPokemons()" disabled>
+        Search
+      </button>
+    </div>
+  </header>
+
+  <p id="searchMessage" class="search-message"></p>
+
+  <main>
+    <div id="pokemonContainer"></div>
+  </main>
+
+  <button id="loadMoreBtn" onclick="loadMore()">Weiter suchen</button>
+  <div id="loader" class="loader hidden">Laden...</div>
+
+  <div id="detailView" class="hidden" onclick="closeDetail()">
+    <div id="detailCard" class="detail-card" onclick="event.stopPropagation()"></div>
+  </div>
+
+
+  <script src="./sricpts/db.js"></script>
+  <script src="./sricpts/main.js"></script>
+  <script src="./sricpts/template.js"></script>
+
+
+      </body>
+</html>

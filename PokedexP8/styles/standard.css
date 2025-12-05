@@ -1,0 +1,136 @@
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+header {
+  background: #10263e;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  width: 32px;
+  height: 32px;
+}
+
+h1 {
+  margin: 0;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+header input {
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  min-width: 180px;
+}
+
+header button {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+header button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.search-message {
+  text-align: center;
+  margin: 8px 0 0;
+  min-height: 20px;
+}
+
+main {
+  max-width: 1440px;
+  margin: 20px auto;
+  padding: 0 12px 40px;
+}
+
+#pokemonContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+#loadMoreBtn {
+  display: block;
+  margin: 0 auto 24px;
+  padding: 10px 24px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  background: linear-gradient(135deg, #ffcc33, #ff9900);
+  color: #0b1020;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
+  transition: transform 0.15s, box-shadow 0.15s, filter 0.15s;
+}
+
+#loadMoreBtn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.45);
+  filter: brightness(1.05);
+}
+
+#loadMoreBtn:disabled {
+  opacity: 0.5;
+  cursor: default;
+  box-shadow: none;
+  transform: none;
+  filter: none;
+}
+
+.loader {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-right {
+    width: 100%;
+  }
+
+  header input {
+    width: 100%;
+  }
+}
+
